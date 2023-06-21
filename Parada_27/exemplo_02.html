@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Exemplo 02</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo_02.css">
+        
+        <script src="js/viacep.js"></script>
+        
+    </head>
+
+    <body>
+        <div id="box">
+
+            <h3>Bem-vindo! </h3>
+        <form id="form">
+            <label>Nome</label>
+            <input type="text" id="i_nome"required>
+
+            <label>Sobrenome</label>
+            <input type="text" id="i_sobrenome" required>
+
+            <label>E-mail</label>
+            <input type="text" id="i_email" placeholder="ex: email@kick.com" required>
+
+            <h3><b>Endereço</b></h3>
+            <label>CEP</label>
+            <input type="text" id="i_cep" placeholder="00000-000" onblur="pesquisa_cep(this.value)" required>
+
+            <label>Rua</label>
+            <input type="text" id="i_rua" required>
+
+            <label>Bairro</label>
+            <input type="text" id="i_bairro" required>
+
+            <label>Cidade</label>
+            <input type="text" id="i_cidade" required>
+
+            <label>Estado</label>
+            <input type="text" id="i_estado" required>
+
+            <button type="submit" id="btt">Cadastrar</button>
+        </form>
+        </div>
+    </body>
+
+</html>
